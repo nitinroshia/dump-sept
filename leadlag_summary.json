@@ -23,8 +23,26 @@
       }
     },
     "event_anchored_best": {
-      "status": "NO_SIGNIFICANT_LAG_FOUND",
-      "n_lags_tested": 15
+      "status": "SIGNIFICANT_LAG_FOUND",
+      "best_lag": {
+        "lag_minutes_after_close": 10,
+        "n": 53045,
+        "beta": 0.013018808428065593,
+        "t_stat_hac": 2.344824484324992,
+        "p_value_hac": 0.019036038345405376,
+        "significant_at_5pct": true
+      },
+      "family": {
+        "this_pair": {
+          "family_size": 15,
+          "p_raw": 0.019036038345405376,
+          "p_bonferroni": 0.28554057518108067,
+          "p_holm": 0.28554057518108067
+        },
+        "all_pairs_family_size": 66,
+        "p_bonferroni_all_pairs": 1.0,
+        "p_holm_all_pairs": 1.0
+      }
     }
   },
   "5m:15m": {
@@ -59,6 +77,17 @@
         "t_stat_hac": -2.683910581723927,
         "p_value_hac": 0.007276656528412556,
         "significant_at_5pct": true
+      },
+      "family": {
+        "this_pair": {
+          "family_size": 15,
+          "p_raw": 0.007276656528412556,
+          "p_bonferroni": 0.10914984792618834,
+          "p_holm": 0.10914984792618834
+        },
+        "all_pairs_family_size": 66,
+        "p_bonferroni_all_pairs": 0.4802593308752287,
+        "p_holm_all_pairs": 0.4802593308752287
       }
     }
   },
@@ -87,7 +116,13 @@
     },
     "event_anchored_best": {
       "status": "NO_SIGNIFICANT_LAG_FOUND",
-      "n_lags_tested": 36
+      "n_lags_tested": 36,
+      "family": {
+        "this_pair": {
+          "family_size": 36
+        },
+        "all_pairs_family_size": 66
+      }
     }
   }
 }
